@@ -1,0 +1,198 @@
+﻿@page
+@model Robonauts.Pages.Workshop.AllWorkshopsModel
+@{
+    ViewData["Title"] = "Workshops";
+    Layout = "~/Pages/_CommonLayout.cshtml";
+}
+
+@section Javascripts{
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
+}
+
+
+<div class="container">
+
+    <div class="panel" style="background-color:#FFFFFF;" id="top">
+        <div class="panel-heading">
+            <h1 class="text-capitalize text-center" style="color:darkorange" ;>Workshops conducted by Us</h1>
+        </div>
+    </div>
+    <div>
+
+        <br />
+
+        <!-- pgdav-->
+
+        <div class="panel panel-success" id="pgdav">
+            <div class="panel-heading">
+                <h3 class="panel-title text-capitalize">Workshop at PGDAV College, University of Delhi</h3>
+            </div>
+            <div class="panel-body text-justify">
+                The Centre for Robotics and Artificial Intelligence conducted workshop on <i><strong>"Introduction to Robotics"</strong></i> at PGDAV College, University of Delhi. Students were introduced to Atmega 2560 and FireBird V robots.<br />
+                <br />
+                <div>
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/pgdav1.jpg" alt="PGDAV Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #DFF0D8;" />
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/pgdav2.jpg" alt="PGDAV Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #DFF0D8;" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/pgdav4.jpg" alt="PGDAV Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #DFF0D8;" />
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/pgdav5.jpg" alt="PGDAV Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #DFF0D8;" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/pgdav6.jpg" alt="PGDAV Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #DFF0D8;" />
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/pgdav7.jpg" alt="PGDAV Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #DFF0D8;" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/pgdav8.jpg" alt="PGDAV Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #DFF0D8;" />
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <br />
+
+        <!-- Mumbai University-->
+
+        <div class="panel panel-info" id="mu">
+            <div class="panel-heading">
+                <h3 class="panel-title text-capitalize">Workshop at Department of Computer Science, University of Mumbai</h3>
+            </div>
+            <div class="panel-body text-justify">
+                The Centre for Robotics and Artificial Intelligence conducted workshop on <i><strong>"Robotics"</strong></i> at Department of Computer Science, University of Mumbai. Dr. Nikhil Kumar Rajput introduced students to Atmega 2560, FireBird V robots Raspberry Pi and Arduino.<br />
+                <br />
+                <div>
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/mu1.jpg" alt="Mumbai Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #D9EDF7;" />
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/mu2.jpg" alt="Mumbai Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #D9EDF7;" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/mu3.jpg" alt="Mumbai Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #D9EDF7;" />
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/mu4.jpg" alt="Mumbai Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #D9EDF7;" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/mu6.jpg" alt="Mumbai Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #D9EDF7;" />
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/mu7.jpg" alt="Mumbai Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #D9EDF7;" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/mu8.jpg" alt="MumbaiWorkshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #D9EDF7;" />
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/mu9.jpg" alt="MumbaiWorkshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #D9EDF7;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br />
+
+
+
+        <!-- Ramanujan-->
+
+
+
+        <div class="panel panel-warning" id="ramanujan">
+            <div class="panel-heading">
+                <h3 class="panel-title text-capitalize">Workshop at Centre for Robotics and Artificial Intelligence, Ramanujan College</h3>
+            </div>
+            <div class="panel-body text-justify">
+                The Centre for Robotics and Artificial Intelligence conducted workshop on <i><strong>"Introduction to Robotics"</strong></i> for first year students. Students were introduced to Atmega 2560 Firebird V. Dr. Nikhil Kumar Rajput delivered lecture on programming in Embedded C.<br />
+                <br />
+                <div>
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/ramanujan1.jpg" alt="Ramanujan Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #FCF8E3;" />
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/ramanujan3.jpg" alt="Ramanujan Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #FCF8E3;" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/ramanujan4.jpg" alt="Ramanujan Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #FCF8E3;" />
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/ramanujan5.jpg" alt="Ramanujan Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #FCF8E3;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="text-capitalize text-center col-md-8">
+            <h3>Interested in Organizing workshop by Robonauts ?</h3>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="text-capitalize text-center col-md-8">
+            <a asp-page="/Workshop/Index" class="btn btn-warning">Click Here</a>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <br />
+    <hr />
+
+    <div class="row">
+        <div class="col-lg-4 col-xs-12"></div>
+        <div class="col-lg-1 col-xs-12 text-center text-capitalize">
+            <a asp-page="/Index" class="btn btn-success">Home</a>
+        </div>
+        <div class="col-lg-2 col-xs-12"></div>
+        <div class="col-lg-1 col-xs-12 text-center text-capitalize">
+            <a class="page-scroll btn btn-info" href="#top">Back To Top</a>
+        </div>
+        <div class="col-lg-4 col-xs-12"></div>
+    </div>
+</div>
+
+

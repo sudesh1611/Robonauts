@@ -1,0 +1,95 @@
+﻿@page
+@model Robonauts.Pages.Workshop.MumbaiUniversityModel
+@{
+    ViewData["Title"] = "Mumbai Workshop";
+    Layout = "~/Pages/_CommonLayout.cshtml";
+}
+
+@section Javascripts{
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
+}
+
+
+<div class="container">
+
+    <div class="panel" style="background-color:#FFFFFF;" id="top">
+        <div class="panel-heading">
+            <h1 class="text-capitalize text-center" style="color:darkorange" ;>Workshops conducted by Us</h1>
+        </div>
+    </div>
+    <div>
+        <br />
+
+        <!-- Mumbai University-->
+
+        <div class="panel panel-info" id="mu">
+            <div class="panel-heading">
+                <h3 class="panel-title text-capitalize">Workshop at Department of Computer Science, University of Mumbai</h3>
+            </div>
+            <div class="panel-body text-justify">
+                The Centre for Robotics and Artificial Intelligence conducted workshop on <i><strong>"Robotics"</strong></i> at Department of Computer Science, University of Mumbai. Dr. Nikhil Kumar Rajput introduced students to Atmega 2560, FireBird V robots Raspberry Pi and Arduino.<br />
+                <br />
+                <div>
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/mu1.jpg" alt="Mumbai Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #D9EDF7;" />
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/mu2.jpg" alt="Mumbai Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #D9EDF7;" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/mu3.jpg" alt="Mumbai Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #D9EDF7;" />
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/mu4.jpg" alt="Mumbai Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #D9EDF7;" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/mu6.jpg" alt="Mumbai Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #D9EDF7;" />
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/mu7.jpg" alt="Mumbai Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #D9EDF7;" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/mu8.jpg" alt="MumbaiWorkshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #D9EDF7;" />
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/mu9.jpg" alt="MumbaiWorkshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #D9EDF7;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-xs-12"></div>
+        <div class="col-lg-offset-1 col-lg-1 col-xs-12 text-center text-capitalize">
+            <a class="page-scroll btn btn-info" asp-page="AllWorkshops">See All Workshops</a>
+        </div>
+        <div class="col-lg-1 col-xs-12"></div>
+        <div class="col-lg-1 col-xs-12 text-center text-capitalize">
+            <a asp-page="Index" class="btn btn-success">Back To Workshops</a>
+        </div>
+        <div class="col-lg-4 col-xs-12"></div>
+    </div>
+</div>
+
+
+

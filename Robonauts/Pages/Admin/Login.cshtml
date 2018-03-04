@@ -1,0 +1,46 @@
+﻿@page
+@model Robonauts.Pages.Admin.LoginModel
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Pages/_CommonLayout.cshtml";
+}
+
+<div class="container">
+    <div class="panel" style="background-color:#FFFFFF;" id="top">
+        <div class="panel-heading">
+            <h1 class="text-capitalize text-center" style="color:darkorange;">Login</h1>
+        </div>
+    </div>
+    <form method="post">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="form-group col-md-4">
+                <label asp-for="CurrentUser.UserName">User Name:</label>
+                <div>
+                    <input class="form-control" asp-for="CurrentUser.UserName" />
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="form-group col-md-4">
+                <label asp-for="CurrentUser.Password">Password:</label>
+                <div>
+                    <input class="form-control" asp-for="CurrentUser.Password" />
+                    <span class="text-danger text-center">@Model.Message</span>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="form-group col-md-4 text-center">
+                <div>
+                    <input type="submit" class="btn btn-danger" value="Login"/>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </form>
+</div>

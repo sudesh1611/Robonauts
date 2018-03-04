@@ -1,0 +1,171 @@
+﻿@page
+@model Robonauts.Pages.ProjectsModel
+@{
+    ViewData["Title"] = "Projects";
+    Layout = "~/Pages/_CommonLayout.cshtml";
+}
+
+@section Javascripts{
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
+}
+<div class="container">
+
+    <div class="panel" style="background-color:#FFFFFF;" id="top">
+        <div class="panel-heading">
+            <h1 class="text-capitalize text-center" style="color:darkorange" ;>Some of our projects</h1>
+        </div>
+    </div>
+    <div>
+        <br />
+
+        <!-- Eyantra-->
+
+        <div class="panel panel-success" id="Eyantra">
+            <div class="panel-heading">
+                <h3 class="panel-title text-capitalize">e-Yantra - Robotics Competition</h3>
+            </div>
+            <div class="panel-body text-justify">
+                e-Yantra Robotics Competition (eYRC) is a unique annual competition for undergraduate students in science and colleges. Selected teams are given a robotic kit complete with accessories and video tutorials to help them learn basic concepts in embedded systems and microcontroller programming. Abstracts of real world problems assigned as "themes" are then implemented by the teams using the robotic kits. From last 2 years, students have been actively participating in this competition. The projects done under this competitions are :<br />
+                <ul>
+                    <li>Warehouse Management</li>
+                    <li>Recycle Waste Management</li>
+                    <li>Search and Rescue</li>
+                </ul>
+                <div class="row">
+                    <div class="text-center text-capitalize col-lg-12 col-xs-12">
+                        <p class="lead text-center text-capitalize" style="color:forestgreen;"><u>Warehouse Management Demo Video</u></p>
+                    </div>
+                    <div class="col-lg-offset-1 col-lg-10 col-xs-12 text-center">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Framrobonauts%2Fvideos%2F1554851241460341%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" allowTransparency="true" allowFullScreen="true"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <br />
+                <div class="row">
+                    <div class="text-center text-capitalize col-lg-12 col-xs-12">
+                        <p class="lead text-center text-capitalize" style="color:forestgreen;"><u>A Few Glimpses of Eyantra Projects</u></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12 text-center" style="padding:5px 10px 5px 10px;border: 1px solid lightgreen;">
+                            <img src="~/images/gallery/eyantra5.jpg" class="img-responsive" />
+                        </div>
+                        <div class="col-lg-6 col-xs-12 text-center" style="padding:5px 10px 5px 10px;border: 1px solid lightgreen;">
+                            <img src="~/images/gallery/eyantra2.jpg" class="img-responsive" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12 text-center" style="padding:5px 5px 5px 5px;border: 1px solid lightgreen;">
+                            <img src="~/images/gallery/eyantra3.jpg" class="img-responsive" />
+                        </div>
+                        <div class="col-lg-6 col-xs-12 text-center" style="padding:5px 5px 5px 5px;border: 1px solid lightgreen;">
+                            <img src="~/images/gallery/eyantra4.jpg" class="img-responsive" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12 text-center" style="padding:5px 5px 5px 5px;border: 1px solid lightgreen;">
+                            <img src="~/images/gallery/eyantra1.jpg" class="img-responsive" />
+                        </div>
+                        <div class="col-lg-6 col-xs-12 text-center" style="padding:5px 5px 5px 5px;border: 1px solid lightgreen;">
+                            <img src="~/images/gallery/eyantra6.jpg" class="img-responsive" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <!-- Star Innovation-->
+
+        <div class="panel panel-info" id="healthCare">
+            <div class="panel-heading">
+                <h3 class="panel-title text-capitalize">Robotics in Health Care</h3>
+            </div>
+            <div class="panel-body text-justify">
+                This project aims to build service robots which can be used in hospitals in rural areas where
+                doctors are difficult to find so that normal checkup can be done easily. The project involves
+                small robots that can provide medication reminders, health measurements such as blood pressure readings and heart rate.
+                These robots can transmit readings to the patient's doctor.<br />
+                <br />
+                <div>
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12 text-center" style="padding:5px 5px 5px 5px;border:1px solid lightblue;">
+                            <img src="~/images/gallery/starinnovation1.jpg" class="img-responsive" />
+                        </div>
+                        <div class="col-lg-6 col-xs-12 text-center" style="padding:5px 5px 5px 5px;border:1px solid lightblue;">
+                            <img src="~/images/gallery/starinnovation2.jpg" class="img-responsive" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+
+
+
+        <!-- Arya Soil Moisture-->
+        <div class="panel panel-warning" id="soilMoisture">
+            <div class="panel-heading">
+                <h3 class="panel-title text-capitalize">Soil Moisture Sensor</h3>
+            </div>
+            <div class="panel-body text-justify">
+                In this project a drip is taken and held higher than the whole system. This drip bottle will act as the source of water. A pipe runs down from the drip to a water flow controller. This is an electronic device which opens and closes the path of the flow of water. From the water flow controller a pipe runs and the other end remains open. We consider that this end is to supply water in the fields.
+                A soil moisture sensor is used to take values from the soil samples. We have used Arduino Uno as the brain of the system. It decides, based on the values from the soil moisture sensor, whether to open the valve of the water flow controller or not.<br /><br />This project is done by: <strong>Arya Tanmay Gupta</strong><br /><br />
+                <!-- 16:9 aspect ratio -->
+                <div class="col-lg-offset-1 col-lg-10 col-xs-12 text-center" style="border:1px solid black;">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.youtube.com/embed/vtXKpqOH1hg" style="border:none;overflow:hidden" scrolling="no" allowTransparency="true" allowFullScreen="true"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br />
+        <br />
+        <!-- Ishan Propeller-->
+
+        <div class="panel panel-info" id="propller">
+            <div class="panel-heading">
+                <h3 class="panel-title text-capitalize">Propeller LED Display</h3>
+            </div>
+            <div class="panel-body text-justify">
+                This project uses bright light emitting diodes for displaying the characters and symbols on its assembly.The basic principle used is the persistence of vision. As the LEDs rotate at a high speed they
+                can be controlled with the help of a micro-controller so as to glow them in such a combination that a floating display is formed. A motor spins the "propeller", and a small microprocessor keeps track of time and changes the pattern on seven LEDs with exact timing to simulate an array of LEDs. It is an illusion, but it works nicely.<br /><br />This project is done by: <strong>Ishan Sharma</strong><br /><br />
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-xs-12 text-center" style="padding:5px 5px 5px 5px;">
+                            <img src="~/images/gallery/ishan1.jpg" alt="Propeller 1" class="img-responsive" />
+                        </div>
+
+                        <div class="col-lg-4 col-xs-12 text-center" style="padding:5px 5px 5px 5px;">
+                            <img src="~/images/gallery/ishan2.jpg" alt="Propeller 2" class="img-responsive" />
+                        </div>
+
+                        <div class="col-lg-4 col-xs-12 text-center" style="padding:5px 5px 5px 5px;">
+                            <img src="~/images/gallery/ishan3.jpg" alt="Propeller 3" class="img-responsive" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-lg-12 col-xs-12 text-center text-capitalize">
+            <a class="page-scroll btn btn-info" href="#top">Back To Top</a>
+        </div>
+    </div>
+</div>

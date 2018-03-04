@@ -1,0 +1,87 @@
+﻿@page
+@model Robonauts.Pages.AboutModel
+@{
+    ViewData["Title"] = "About";
+    Layout = "~/Pages/_CommonLayout.cshtml";
+}
+<!-- About Section -->
+<!-- Beautifully Written By Neha Tiwari-->
+
+<div class="container">
+    <br />
+    <div class="panel" style="background-color:#FFFFFF;" id="top">
+        <div class="panel-heading">
+            <h1 class="text-capitalize text-center" style="color:darkorange" ;>Robonauts</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10 text-center text-justify">
+            <p class="lead">Robonauts is the official society under Centre for Robotics and Artificial Intelligence, Ramanujan College, who derive pleasure in creating and programming robots that may even be potent to work without human intervention. We at Robonauts Society involve ourselves in activities ranging from lectures to workshops to various competitions. Society supports and foster interest in various aspects related to robotics in particular, programming embedded systems through workshops and projects. Another important agenda of ours is to spread the culture of robotics across India and we do this by conducting workshops and demonstrations on Robotics and Artificial Intelligence in schools and colleges.</p>
+        </div>
+        <div class="col-lg-1"></div>
+
+    </div>
+    <br />
+
+    <br />
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-image">
+                        <img class="img-circle img-responsive" src="~/images/about/1.jpg" alt="">
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h3 style="color:darkblue;">March 2014</h3>
+                            <h4 class="subheading" style="color:darkblue;">Our Humble Beginning</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted" style="color:blue;">In a classroom, the very first workshop on "Robotics" was conducted by Dr. Nikhil Rajput. The colloquy filled us with zeal and enthusiasm. However most of the strings etiolated with time, it did leave a spark within which was enough to enlighten our ways into the curious world of Robotics.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <img class="img-circle img-responsive" src="~/images/about/2.jpg" alt="">
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h3 style="color:darkgreen;">December 2014</h3>
+                            <h4 class="subheading" style="color:darkgreen;">Dawn Of A Society</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted" style="color:green;">Four students - Ankur, Bittu, Mukul and Purti, formed a group to participate in the reputed, e-yantra Robotics Competition for the year 2014. It was then that the other interested freaks joined hands which further laid the foundation of the Robotics Society.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-image">
+                        <img class="img-circle img-responsive" src="~/images/about/3.jpg" alt="">
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h3 style="color:darkblue;">2015-Present</h3>
+                            <h4 class="subheading" style="color:darkblue;">Unceasing Amelioration</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted" style="color:blue;">With the mission of having a stand in this unusual sphere and the vision of imparting our knowledge to all others, we forged our way into the world of robotics. We experimented, coded, destroyed, created; whatever we do here, we do it with reason and passion.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <a asp-page="/Students/RegisterStudent" style="color:#FF5722;">
+                            <h4 style="color:#FFFFFF;">
+                                Be Part
+                                <br>Of Our
+                                <br>Story!
+                            </h4>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

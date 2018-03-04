@@ -1,0 +1,345 @@
+﻿@page
+@model IndexModel
+
+@{
+    ViewData["Title"] = "HomePage";
+}
+<!-- Header -->
+<header style="background-color:#222222;Background-image:url('/images/header-bg.png');">
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-heading" style="margin-bottom:7px;">Robonauts</div>
+            <div class="intro-lead-in" style="margin-bottom:90px;">Robotics Society of Ramanujan College</div>
+            <a href="#about" class="page-scroll btn btn-xl">Know Us More</a>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- About Section -->
+<!-- Beautifully Written By Neha Tiwari-->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-capitalize" style="color:darkorange;">Robonauts</h2>
+                <h5 class="text-muted" style="color:darkorange;">-------------------</h5><br />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10 text-center text-justify">
+                <p class="lead">Robonauts is the official society under Centre for Robotics and Artificial Intelligence, Ramanujan College, who derive pleasure in creating and programming robots that may even be potent to work without human intervention. We at Robonauts Society involve ourselves in activities ranging from lectures to workshops to various competitions. Society supports and foster interest in various aspects related to robotics in particular, programming embedded systems through workshops and projects. Another important agenda of ours is to spread the culture of robotics across India and we do this by conducting workshops and demonstrations on Robotics and Artificial Intelligence in schools and colleges. </p>
+            </div>
+            <div class="col-lg-1"></div>
+
+        </div>
+        <br />
+
+        <br />
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="~/images/about/1.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3 style="color:darkblue;">March 2014</h3>
+                                <h4 class="subheading" style="color:darkblue;">Our Humble Beginning</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted" style="color:blue;">In a classroom, the very first workshop on "Robotics" was conducted by Dr. Nikhil Rajput. The colloquy filled us with zeal and enthusiasm. However most of the strings etiolated with time, it did leave a spark within which was enough to enlighten our ways into the curious world of Robotics.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="~/images/about/2.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3 style="color:darkgreen;">December 2014</h3>
+                                <h4 class="subheading" style="color:darkgreen;">Dawn Of A Society</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted" style="color:green;">Four students - Ankur, Bittu, Mukul and Purti, formed a group to participate in the reputed, e-yantra Robotics Competition for the year 2014. It was then that the other interested freaks joined hands which further laid the foundation of the Robotics Society.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="~/images/about/3.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3 style="color:darkblue;">2015-Present</h3>
+                                <h4 class="subheading" style="color:darkblue;">Unceasing Amelioration</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted" style="color:blue;">With the mission of having a stand in this unusual sphere and the vision of imparting our knowledge to all others, we forged our way into the world of robotics. We experimented, coded, destroyed, created; whatever we do here, we do it with reason and passion.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <a asp-page="/Students/RegisterStudent">
+                                <h4 style="color:white;">
+                                    Be Part
+                                    <br>Of Our
+                                    <br>Story!
+                                </h4>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Workshops Section -->
+<section style="background-color:#333333">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-capitalize" style="color:darkorange;">Workshops</h2>
+                <h5 class="text-muted small" style="color:darkorange;">---------------</h5><br /><br />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 text-center ">
+                <h3 style="color:cornflowerblue; text-align:center;"> Next Workshop is Being Planned<br /><small style="color:blueviolet;" class="text-capitalize"> Look At Our Previous workshops</small></h3><br />
+                <a class="btn btn-group-lg btn-danger" asp-page="/Workshop/AllWorkshops">Workshops</a>
+            </div>
+
+            <div class="col-lg-6 text-center">
+                <h3 style="color:limegreen; text-align:center;">Interested in Organizing Workshop<br /><small style="color:green;" class="text-capitalize">By Robonauts</small></h3><br />
+                <a class="btn btn-group-lg btn-danger" asp-page="/Workshop/Index">Click Here</a>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <h3 style="color:cornflowerblue; text-align:center;"></h3><br />
+
+            </div>
+
+            <div class="col-md-6 text-center">
+                <h3 style="color:seagreen; text-align:center;"></h3><br />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <h3 style="color:cornflowerblue; text-align:center;"></h3><br />
+
+            </div>
+
+            <div class="col-md-6 text-center">
+                <h3 style="color:seagreen; text-align:center;"></h3><br />
+            </div>
+        </div>
+    </div>
+    <br /><br />
+</section>
+
+
+
+<!-- Contact Section -->
+<section id="contact" style="background-image:url('/images/map-image.png');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-capitalize" style="color:darkorange;">Contact Us</h2>
+                <h3 class="section-subheading text-muted" style="color:darkorange;"></h3>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    <li>
+                    </li>
+                    <li>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    <li>
+                    </li>
+                    <li>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    <li>
+                    </li>
+                    <li>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+
+            </div>
+            <div class="col-lg-8 text-center">
+                <div>
+                    <h3 style="color:#ffffff;">Centre for Robotics and Artificial Intelligence<br /><small style="color:#ffffff;"> Ramanujan College, Kalkaji<br /> University of Delhi</small></h3>
+                </div>
+            </div>
+            <div class="col-lg-2">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    <li>
+                    </li>
+                    <li>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-5 text-center">
+                <h3 class="text-capitalize" style="color:#FFFFFF;">Email: <a style="color:#FFFFFF;" href="mailto:dhawal.chawla@ramanujan.du.ac.in"><small style="color:#FFFFFF;" class="text-lowercase">dhawal.chawla@ramanujan.du.ac.in</small></a></h3>
+
+            </div>
+            <div class="col-lg-2 text-center">
+                <ul class="list-inline social-buttons">
+                    <li>
+                        <a href="https://www.facebook.com/ramrobonauts/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-5 text-center">
+                <h3 class="text-capitalize" style="color:#FFFFFF;">Phone: <small style="color:#FFFFFF;">+91-9599376026</small></h3>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
+                <a asp-page="/ContactUs" class="btn btn-default text-capitalize"><strong>Click For Any Query</strong></a>
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Team Section
+<section id="team">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-capitalize" style="color:darkorange;">Our Amazing Members</h2>
+                <h3 class="section-subheading text-muted" style="color:darkorange;"></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="team-member">
+                    <img src="~/images/team/dhawal.jpg" class="img-responsive img-circle" alt="">
+                    <h4>Dhawal Chawla</h4>
+                    <p class="text-muted">President</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member">
+                    <img src="~/images/team/sudesh.jpg" class="img-responsive img-circle" alt="">
+                    <h4>Sudesh Kumar</h4>
+                    <p class="text-muted">Vice-President</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member">
+                    <img src="~/images/team/bittu.jpg" class="img-responsive img-circle" alt="">
+                    <h4>Bittu Chauhan</h4>
+                    <p class="text-muted">Secretary</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="team-member">
+                    <img src="~/images/team/jatin.jpg" class="img-responsive img-circle" alt="">
+                    <h4>Jatin Dhankhar</h4>
+                    <p class="text-muted">Joint Secretary</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member">
+                    <img src="~/images/team/kavish.jpg" class="img-responsive img-circle" alt="">
+                    <h4>Kavish Bhatia</h4>
+                    <p class="text-muted">Treasurer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    -->

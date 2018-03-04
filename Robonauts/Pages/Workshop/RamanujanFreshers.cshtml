@@ -1,0 +1,72 @@
+﻿@page
+@model Robonauts.Pages.Workshop.RamanujanFreshersModel
+@{
+    ViewData["Title"] = "Ramanujan Workshop";
+    Layout = "~/Pages/_CommonLayout.cshtml";
+}
+
+@section Javascripts{
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
+}
+
+
+<div class="container">
+
+    <div class="panel" style="background-color:#FFFFFF;" id="top">
+        <div class="panel-heading">
+            <h1 class="text-capitalize text-center" style="color:darkorange" ;>Workshops conducted by Us</h1>
+        </div>
+    </div>
+    <div>
+
+        <br />
+        <!-- Ramanujan-->
+        <div class="panel panel-warning" id="ramanujan">
+            <div class="panel-heading">
+                <h3 class="panel-title text-capitalize">Workshop at Centre for Robotics and Artificial Intelligence, Ramanujan College</h3>
+            </div>
+            <div class="panel-body text-justify">
+                The Centre for Robotics and Artificial Intelligence conducted workshop on <i><strong>"Introduction to Robotics"</strong></i> for first year students. Students were introduced to Atmega 2560 Firebird V. Dr. Nikhil Kumar Rajput delivered lecture on programming in Embedded C.<br />
+                <br />
+                <div>
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/ramanujan1.jpg" alt="Ramanujan Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #FCF8E3;" />
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/ramanujan3.jpg" alt="Ramanujan Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #FCF8E3;" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/ramanujan4.jpg" alt="Ramanujan Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #FCF8E3;" />
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <img class="img-responsive" src="~/images/gallery/ramanujan5.jpg" alt="Ramanujan Workshop Pic" style="padding: 10px 10px 10px 10px; border:1px solid #FCF8E3;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3 col-xs-12"></div>
+        <div class="col-lg-offset-1 col-lg-1 col-xs-12 text-center text-capitalize">
+            <a class="page-scroll btn btn-info" asp-page="AllWorkshops">See All Workshops</a>
+        </div>
+        <div class="col-lg-1 col-xs-12"></div>
+        <div class="col-lg-1 col-xs-12 text-center text-capitalize">
+            <a asp-page="Index" class="btn btn-success">Back To Workshops</a>
+        </div>
+        <div class="col-lg-4 col-xs-12"></div>
+    </div>
+</div>

@@ -1,0 +1,249 @@
+﻿@page
+@model Robonauts.Pages.Admin.AdminModel
+@{
+    ViewData["Title"] = "Admin";
+    Layout = "~/Pages/_CommonLayout.cshtml";
+}
+
+<div class="container">
+    <div class="panel" style="background-color:#FFFFFF;" id="top">
+        <div class="panel-heading">
+            <h1 class="text-capitalize text-center" style="color:darkorange" ;>Admin</h1>
+        </div>
+    </div>
+    <br />
+    <div>
+        <a class="btn btn-default" data-toggle="collapse" href="#multiCollapse1" role="button" aria-expanded="false" aria-controls="multiCollapse1">View Admin Accounts</a>
+        <a class="btn btn-default" data-toggle="collapse" href="#multiCollapse2" role="button" aria-expanded="false" aria-controls="multiCollapse2">Add More Admins</a>
+        <a class="btn btn-default" data-toggle="collapse" href="#multiCollapse3" role="button" aria-expanded="false" aria-controls="multiCollapse3">View Subscribers for Notifications</a>
+        <a class="btn btn-default" data-toggle="collapse" href="#multiCollapse4" role="button" aria-expanded="false" aria-controls="multiCollapse4">View QueryMessages</a>
+        @*<a class="btn btn-default" data-toggle="collapse" href="#multiCollapse5" role="button" aria-expanded="false" aria-controls="multiCollapse5">Send notifications to subscribers</a>*@
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-lg-12 col-sm-12 col-xs-12">
+            <div class="collapse multi-collapse" id="multiCollapse1">
+                <div class="container">
+                    <div class="panel" style="background-color:#DDDDDD;" id="top">
+                        <div class="panel-heading">
+                            <h4 class="text-capitalize text-center" style="color:darkorange" ;>List of Admins</h4>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <span class="text-danger text-center">@Model.Message</span>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <th>User ID</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>User Name</th>
+                        </tr>
+                        @foreach (var item in Model.UserAccounts)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FirstName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LastName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserName)
+                    </td>
+                </tr>
+}
+                    </table>
+                </div>
+                <br /><br /><br />
+            </div>
+        </div>
+        <div class="col-lg-12 col-sm-12 col-xs-12">
+            <div class="collapse multi-collapse" id="multiCollapse2">
+                <div class="container">
+                    <div class="panel" style="background-color:#FFFFFF;" id="top">
+                        <div class="panel-heading">
+                            <h4 class="text-capitalize text-center" style="color:darkorange;">Register New Admin</h4>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <span class="text-danger text-center">@Model.Message</span>
+                        <span class="text-danger text-center">@Model.AddedUserMessage</span>
+                    </div>
+                    <form method="post">
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="form-group col-md-4">
+                                <label asp-for="NewUser.FirstName">First Name:</label>
+                                <div>
+                                    <input class="form-control" asp-for="NewUser.FirstName" />
+                                    <span asp-validation-for="NewUser.FirstName" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="form-group col-md-4">
+                                <label asp-for="NewUser.LastName">Last Name:</label>
+                                <div>
+                                    <input class="form-control" asp-for="NewUser.LastName" />
+                                    <span asp-validation-for="NewUser.LastName" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="form-group col-md-4">
+                                <label asp-for="NewUser.UserName">User Name:</label>
+                                <div>
+                                    <input class="form-control" asp-for="NewUser.UserName" />
+                                    <span asp-validation-for="NewUser.UserName" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="form-group col-md-4">
+                                <label asp-for="NewUser.Password">Password:</label>
+                                <div>
+                                    <input class="form-control" asp-for="NewUser.Password" />
+                                    <span class="text-danger" asp-validation-for="NewUser.Password"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="form-group col-md-4">
+                                <label asp-for="NewUser.ConfirmPassword">Confirm Password:</label>
+                                <div>
+                                    <input class="form-control" asp-for="NewUser.ConfirmPassword" />
+                                    <span asp-validation-for="NewUser.ConfirmPassword" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="form-group col-md-4 text-center">
+                                <div>
+                                    <input type="submit" class="btn btn-info" value="Register">
+                                </div>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 col-sm-12 col-xs-12">
+            <div class="collapse multi-collapse" id="multiCollapse3">
+                <div class="container">
+                    <div class="panel" style="background-color:#DDDDDD;" id="top">
+                        <div class="panel-heading">
+                            <h4 class="text-capitalize text-center" style="color:darkorange" ;>Subscriptions for notification</h4>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <span class="text-danger text-center">@Model.Message</span>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <th>Id</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Course</th>
+                            <th>Year</th>
+                            <th>Phone No</th>
+                            <th>Email Id</th>
+                        </tr>
+                        @foreach (var item in Model.Subscribers)
+        {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FirstName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LastName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Course)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Year)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PhoneNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                </tr>
+}
+                    </table>
+                </div>
+                <br /><br /><br />
+            </div>
+        </div>
+        <div class="col-lg-12 col-lg-12 col-xs-12">
+            <div class="collapse multi-collapse" id="multiCollapse4">
+                <div class="container">
+                    <div class="panel" style="background-color:#DDDDDD;" id="top">
+                        <div class="panel-heading">
+                            <h4 class="text-capitalize text-center" style="color:darkorange" ;>Registrations for Workshop</h4>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <span class="text-danger text-center">@Model.Message</span>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Subject</th>
+                            <th>Message</th>
+                        </tr>
+                        @foreach (var item in Model.QueryMessages)
+        {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Subject)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Message)
+                    </td>
+                </tr>
+}
+                    </table>
+                </div>
+                <br /><br /><br />
+            </div>
+        </div>
+        @*<div class="col-lg-12 col-md-12 col-xs-12">
+            <div class="collapse multi-collapse" id="multiCollapse5">
+                <div>
+                    Will Be Added Soon
+                </div>
+            </div>
+        </div>*@
+    </div>
+</div>

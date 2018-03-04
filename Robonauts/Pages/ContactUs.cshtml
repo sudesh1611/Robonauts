@@ -1,0 +1,110 @@
+﻿@page
+@model Robonauts.Pages.ContactUsModel
+
+@{
+    ViewData["Title"] = "Contact Us";
+    Layout = "~/Pages/_CommonLayout.cshtml";
+}
+
+<div class="container">
+    <br />
+    <div class="panel" style="background-color:#FFFFFF;" id="top">
+        <div class="panel-heading">
+            <h1 class="text-capitalize text-center" style="color:darkorange" ;>Contact</h1>
+        </div>
+    </div>
+    <div class="text-center">
+        <p class="text-info text-center">@Model.Message</p>
+    </div>
+    <br />
+    <div class="table">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row" style="margin-left:0em;margin-right:0em;margin-bottom:1em;">
+                    <div class="col-lg-12" style="padding-left:0em;margin-left:0em;border-bottom:2px solid black;">
+                        <h4 class="text-capitalize text-left" style="padding-bottom:0px;">Just get in Touch!</h4>
+                    </div>
+                </div>
+
+
+
+                <form method="post">
+                    <div>
+                        <div class="row">
+                            <div class="form-group col-lg-12">
+                                <label asp-for="QueryMessage.Name">Name:</label>
+                                <div>
+                                    <input class="form-control" asp-for="QueryMessage.Name" />
+                                    <span asp-validation-for="QueryMessage.Name" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-12">
+                                <label asp-for="QueryMessage.Email">Email:</label>
+                                <div>
+                                    <input class="form-control" asp-for="QueryMessage.Email" />
+                                    <span asp-validation-for="QueryMessage.Email" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-12">
+                                <label asp-for="QueryMessage.Subject">Subject:</label>
+                                <div>
+                                    <input class="form-control" asp-for="QueryMessage.Subject" />
+                                    <span asp-validation-for="QueryMessage.Subject" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-12">
+                                <label asp-for="QueryMessage.Message">Message:</label>
+                                <div>
+                                    <textarea class="form-control" asp-for="QueryMessage.Message" rows="4"></textarea>
+                                    <span asp-validation-for="QueryMessage.Message" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-12 text-left">
+                                <input value="Submit" class="btn btn-success" type="submit" id="submitButton" />
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-4">
+                <div class="row" style="margin-left:0em;margin-right:0em;margin-bottom:1em;">
+                    <div class="col-lg-12" style="padding-left:0em;margin-left:0em;border-bottom:2px solid black;">
+                        <h4 class="text-capitalize text-left" style="padding-bottom:0px;">Our Bunker</h4>
+                    </div>
+                </div>
+                <p>
+                    Centre For Robotics And Artificial Intelligence<br />
+                    Ramanujan College, University of Delhi,<br />
+                    Kalkaji, New Delhi - 110019<br />
+                    India<br />
+                </p>
+                <p></p>
+                <p>
+                    Email: <a href="mailto:dhawal.chawla@ramanujan.du.ac.in" style="color:black;">dhawal.chawla@ramanujan.du.ac.in</a>
+                </p>
+                <p>
+                    Phone: +91-9650965984 (Dr. Nikhil Rajput)<br />
+                    Phone: +91-9599376026 (Dhawal Chawla)
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+@*@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}*@
