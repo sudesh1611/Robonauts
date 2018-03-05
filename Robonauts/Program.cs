@@ -19,6 +19,7 @@ namespace Robonauts
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseUrls("http://*:5010")
                 .UseStartup<Startup>()
                 .Build();
     }
