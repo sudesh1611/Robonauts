@@ -263,3 +263,4 @@ __pycache__/
 *.db
 appsettings.Development.json
 appsettings.json
+*.bin
